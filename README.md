@@ -2,9 +2,9 @@
 An small game for Developer School where you guess the job of the Bachelor/Bachelorette contestants based on their pictures. 
 ## To Run
 In the home directory `/bach`
-#First time use: 
+# First time use: 
 Run `npm install`
-#Always:
+# Always:
 Run `npm start`
 View at localhost:3000
 
