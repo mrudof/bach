@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import List from './List'
 import contestantData from './contestant-data';
 
