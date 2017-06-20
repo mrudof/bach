@@ -1,13 +1,12 @@
 # Bachelor Game App
 An small game for Developer School where you guess the job of the Bachelor/Bachelorette contestants based on their pictures. 
-# To Run
+## To Run
 In the home directory `/bach`
-
-First time use: 
-  run `npm install`
-To run:
-  run `npm start`
-  view at localhost:3000
+#First time use: 
+Run `npm install`
+#Always:
+Run `npm start`
+View at localhost:3000
 
 ## Authors
 * **Brittany Harrington**
