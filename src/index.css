@@ -148,3 +148,13 @@ img.Rachel {
     font-family: Arial;
     font-size: 20px;
 }
+
+.correct {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.incorrect {
+  opacity: 0.4;
+  pointer-events: none;
+}

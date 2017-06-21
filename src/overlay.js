@@ -3,12 +3,15 @@ import {Modal} from 'react-bootstrap';
 import ContestantInfo from './contestant-info';
 
 class Overlay extends Component{
+
     bachClick(e, answer){
         e.preventDefault();
-        if (answer == this.props.occupation){
-            console.log(this.props.occupation);
+        this.props.closeModal();
+        if (answer === this.props.occupation){
+            this.props.correct();
+        } else {
+            this.props.incorrect();
         }
-        console.log(answer);
     }
     render(){
         var shuffled = this.props.fullContestants.sort(() => .5 - Math.random());// shuffle

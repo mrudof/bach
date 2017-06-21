@@ -1,6 +1,4 @@
-import React, {
-    Component
-} from 'react';
+import React, {Component} from 'react';
 import ProductItem from './product-item';
 import StackGrid from "react-stack-grid";
 
@@ -26,6 +24,9 @@ class List extends Component {
                 }
                 fullContestants = {
                     that.props.fullContestants
+                }
+                updateScore = {
+                    that.props.updateScore
                 }
                 />
             )

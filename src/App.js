@@ -1,20 +1,27 @@
 import React, { Component } from 'react';
-import List from './list';
+import List from './List';
+import Nav from './Nav';
+import selected from './random';
 import contestantData from './contestant-data';
-import Nav from './nav';
-
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = { 
+      score: 0,
+      arrayOfCont: selected
+    };
+    this.updateScore = this.updateScore.bind(this);
+  }
+  updateScore(){
+    this.setState({score: this.state.score + 1});
+  }
+
   render() {
-    const n = 16;
     const shuffled = contestantData.sort(() => .5 - Math.random());// shuffle  
-    let selected = shuffled.slice(0,n);
-    selected.forEach(function(item){ 
-      item.clicked = 0;
-    });
     return (
       <div className="App">
-        <Nav/>
-        <List contestants={selected} fullContestants={shuffled}/>
+        <Nav score={this.state.score}/>
+        <List updateScore={this.updateScore} contestants={this.state.arrayOfCont} fullContestants={shuffled}/>
         <div className="footer navbar-bottom">
 		     <p className="disclaimer">All Bachelor photos are property of their respective owners; No Copyright infringement intended.</p>
 	      </div>
