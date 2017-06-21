@@ -1,20 +1,12 @@
 import React, { Component } from 'react';
+import ContestantInfo from './contestant-info';
 
 class ProductItem extends Component {
     render() {
-        return ( <
-            div className = "gridBox" >
-            <
-            div className = "pictures"
-            key = "picture" >
-            <
-            img src = { this.props.picture }
-            className = { this.props.season }
-            />  <
-            /div> <
-            div className = "centerText"
-            key = "name" > { this.props.name } < /div> <
-            /div>
+        return ( 
+        <div className = "gridBox" >
+          <ContestantInfo name = {this.props.name} picture = {this.props.picture} season={this.props.season}/>
+        </div>
         )
     }
 }
