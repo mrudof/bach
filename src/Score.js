@@ -9,7 +9,7 @@ class Score extends Component {
   render() {
     return (
       <div className="score">
-        score: {this.state.score} / 16
+        Score: {this.state.score} / 16
       </div>
     );
   }
