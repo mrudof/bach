@@ -70,6 +70,27 @@ img.Rachel {
     margin: 0 0 0 -145px;
 }
 
+.modalPic{
+    display:block;
+    margin:auto;
+}
+.Benoverlay{
+    width:20%;
+    height:20%;
+}
+.Jojooverlay{
+    width:20%;
+    height:20%;
+}
+.Nickoverlay{
+    width:20%;
+    height:20%;
+}
+.Racheloverlay{
+    width:20%;
+    height:20%;
+}
+
 .centerText {
     text-align: center;
     font-size: 20px;

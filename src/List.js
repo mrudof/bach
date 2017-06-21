@@ -6,6 +6,7 @@ import StackGrid from "react-stack-grid";
 
 class List extends Component {
     render() {
+        var that= this;
         var contestantslist = this.props.contestants.map(function(contestant, index) {
             return ( <
                 ProductItem key = {
@@ -20,15 +21,19 @@ class List extends Component {
                 season = {
                     contestant.season
                 }
+                occupation = { 
+                    contestant.occupation
+                }
+                fullContestants = {
+                    that.props.fullContestants
+                }
                 />
             )
         })
-        return ( <
-            StackGrid className = "grid"
+        return ( <StackGrid className = "grid"
             columnWidth = { 210 } >
 
-            { contestantslist } <
-            /StackGrid>
+            { contestantslist } </StackGrid>
         )
     }
 }
