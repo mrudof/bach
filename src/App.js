@@ -10,7 +10,6 @@ class App extends Component {
     let selected = shuffled.slice(0,n);
     selected.forEach(function(item){ 
       item.clicked = 0;
-      console.log(item);
     });
     return (
       <div className="App">
