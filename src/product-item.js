@@ -5,7 +5,11 @@ class ProductItem extends Component {
     return (
       <tr>
         <td>{this.props.name}</td>
-        <td>{this.props.picture}</td>
+        <td>
+          <div className="pictures">
+            <img src={this.props.picture} alt="faces" className={this.props.season}></img>
+          </div>
+        </td>
       </tr>
     )
   }
