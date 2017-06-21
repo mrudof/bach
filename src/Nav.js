@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import Score from './Score';
 
 class Nav extends Component {
+  handleClick() {
+    window.location.reload();
+  }
   render() {
     return (
       <nav className="navbar navbar-default navbar-fixed-top">
@@ -13,7 +16,7 @@ class Nav extends Component {
           </div>
           <ul className="nav navbar-nav navbar-right navbar-buttons">
             <li><Score/></li>
-            <li><button type="play" className="btn btn-danger">Restart</button></li>
+            <li><button onClick={this.handleClick} type="play" className="btn btn-danger">Restart</button></li>
           </ul>
         </div>
       </nav>
