@@ -81,7 +81,7 @@ img.Rachel {
 .centerText {
     text-align: center;
     font-size: 20px;
-    font-family: "Arial Black";
+    font-family: cursive;
 }
 
 .grid {
@@ -90,5 +90,5 @@ img.Rachel {
 }
 
 .gridBox {
-    border: 5px solid black;
+    border: 5px solid #DCDCDC;
 }
