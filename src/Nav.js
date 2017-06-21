@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { nav, button } from 'react-bootstrap';
+import Score from './Score';
 
 class Nav extends Component {
   render() {
@@ -11,11 +11,8 @@ class Nav extends Component {
               <img alt="logo" className="bachelor-logo" src="The_Bachelor_usa_logo.png"/>
             </a>
           </div>
-          <ul className="nav navbar-nav navbar-buttons">
-            <li><button type="play" className="btn btn-primary play-button">Let's Play!</button></li>
-          </ul>
           <ul className="nav navbar-nav navbar-right navbar-buttons">
-            <li>Score</li>
+            <li><Score/></li>
             <li><button type="play" className="btn btn-danger">Restart</button></li>
           </ul>
         </div>
