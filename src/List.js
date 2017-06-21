@@ -24,7 +24,8 @@ class List extends Component {
             )
         })
         return ( <
-            StackGrid columnWidth = { 200 } >
+            StackGrid className = "grid"
+            columnWidth = { 210 } >
 
             { contestantslist } <
             /StackGrid>
