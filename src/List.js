@@ -15,7 +15,9 @@ class List extends Component {
     })
     return (
       <table>
+        <tbody>
         {contestantslist}
+        </tbody>
       </table>
     )
   }

@@ -6,7 +6,6 @@ class ProductItem extends Component {
       <tr>
         <td>{this.props.name}</td>
         <td>
-          {/* Need div to contain image for cropping purposes */}
           <div className="pictures">
             <img src={this.props.picture} alt="faces" className={this.props.season}></img>
           </div>
