@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import ContestantInfo from './contestant-info';
 
 class ProductItem extends Component {
+  
     render() {
         return ( 
         <div className = "gridBox" >

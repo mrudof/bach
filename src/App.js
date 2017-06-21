@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import List from './List';
+import List from './list';
 import contestantData from './contestant-data';
-import Nav from './Nav';
+import Nav from './nav';
 
 class App extends Component {
   render() {

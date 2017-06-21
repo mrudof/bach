@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Score from './Score';
+import Score from './score';
 
 class Nav extends Component {
   handleClick() {
