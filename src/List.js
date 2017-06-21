@@ -9,6 +9,7 @@ class List extends Component {
           key={index}
           name={contestant.name}
           picture={contestant.picture}
+          season={contestant.season}
         />
       )
     })
