@@ -18,6 +18,10 @@ class ResultsModal extends Component {
         result = "You Won!";
         giphy = 'https://media.giphy.com/media/3o6ZsYfXaDrmmASwQo/giphy.gif';
     }
+    else if (this.props.score === 16){
+        result = "Perfect Score!";
+        giphy = "https://media.giphy.com/media/xUPGczNuAxZmXlzXhu/giphy.gif"
+    }
     else{
         result = "You Lost!";
         giphy = 'https://media.giphy.com/media/gcp6ZK9xFR0Nq/giphy.gif';
