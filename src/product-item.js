@@ -51,7 +51,7 @@ class ProductItem extends Component {
             { divOverlay }
             <Modal show={this.state.showModal} onHide={this.close}>
             <Modal.Header closeButton>
-                <Modal.Title>Pick their job!</Modal.Title>
+                <Modal.Title className="contestantTitle">Pick {this.props.name}'s Job!</Modal.Title>
             </Modal.Header>
             <Overlay 
               showModal={this.state.showModal} 

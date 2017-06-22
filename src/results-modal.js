@@ -14,7 +14,7 @@ class ResultsModal extends Component {
     }
   render(){
     let result, giphy;
-    if (this.props.score > 8){
+    if (this.props.score > 0){
         result = "You Won!";
         giphy = 'https://media.giphy.com/media/3o6ZsYfXaDrmmASwQo/giphy.gif';
     }
@@ -32,7 +32,7 @@ class ResultsModal extends Component {
                 </Modal.Title>
         </Modal.Header>
         <Modal.Body> 
-            <span className="centerText">{"Final Score: " + this.props.score}</span>
+            <div className="resultsText">{"Final Score: " + this.props.score}</div>
             <div className = "gameOverGif">
                 <img src = {giphy}/> 
             </div> 

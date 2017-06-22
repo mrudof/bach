@@ -31,7 +31,7 @@ class Overlay extends Component {
             }
         }
         var options = jobs.sort(() => .5 - Math.random());
-        return ( <Modal.Body >
+        return ( <Modal.Body>
             <div>
             <div className = "modelPic" >
                 <img src = { this.props.picture }
