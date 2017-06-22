@@ -33,11 +33,22 @@ class ProductItem extends Component {
     }
 
     render() {
+        let divOverlay;
+
+        if(this.state.card === "correct"){
+            console.log('hi');
+            divOverlay = <div><span className="glyphicon glyphicon-ok clickedOverlay check" aria-hidden="true"></span></div>;
+        }
+        if(this.state.card === "incorrect"){
+            console.log('hi');
+            divOverlay = <div><span className="glyphicon glyphicon-remove clickedOverlay wrong" aria-hidden="true"></span></div>;
+        }
         return ( 
         <div onClick={this.open}>
             <div className = {this.state.card + " gridBox"}>
             <ContestantInfo name = {this.props.name} picture = {this.props.picture} season={this.props.season}/>
             </div>
+            { divOverlay }
             <Modal show={this.state.showModal} onHide={this.close}>
             <Modal.Header closeButton>
                 <Modal.Title>Pick their job!</Modal.Title>
