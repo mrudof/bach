@@ -26,7 +26,8 @@ class App extends Component {
         return ( 
         <div className = "App" >
             <Nav score = { this.state.score } count = { this.state.count }/>
-            <List 
+            <List
+              count = {this.state.count}
               updateScore = { this.updateScore }
               contestants = { this.state.arrayOfCont }
               fullContestants = { shuffled }

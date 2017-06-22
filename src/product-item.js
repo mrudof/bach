@@ -8,7 +8,7 @@ class ProductItem extends Component {
         super(props);
         this.state = {
           showModal: false,
-          card: "notGuessed",
+          card: "notGuessed"
         };
         this.open = this.open.bind(this);
         this.close = this.close.bind(this);
@@ -26,10 +26,12 @@ class ProductItem extends Component {
     updateCardCorrect() {
       this.setState({card: "correct"})
       this.props.updateScore("correct")
+      if (this.props.count === 15) { this.close()}
     }
     updateCardIncorrect() {
       this.setState({card: "incorrect"})
       this.props.updateScore("incorrect")
+      if (this.props.count === 15) { this.close()}
     }
 
     render() {

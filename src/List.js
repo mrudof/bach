@@ -31,6 +31,7 @@ class List extends Component {
                 updateCounter = {
                     that.props.updateScore
                 }
+                count = { that.props.count }
                 />
             )
         })
