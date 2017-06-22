@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Score from './Score';
+import Score from './score';
 
 class Nav extends Component {
   handleClick() {
@@ -18,7 +18,7 @@ class Nav extends Component {
                 <div className="navOptions">
                   <ul className="nav navbar-nav navbar-right navbar-buttons">
                     <li><button onClick={this.handleClick} type="play" className="btn btn-danger resetButton"><span className="glyphicon glyphicon-repeat" aria-hidden="true"></span></button></li>
-                    <li><Score score={this.props.score}/></li>
+                    <li><Score count={this.props.count} score={this.props.score}/></li>
                   </ul>
                 </div>
               </div>

@@ -14,19 +14,18 @@ class Overlay extends Component{
         }
     }
     render(){
-        var shuffled = this.props.fullContestants.sort(() => .5 - Math.random());// shuffle
         var jobs = [this.props.occupation];
         var that = this;
         for (var i=0; i<this.props.fullContestants.length; i++){
             var match = false;
             jobs.map(function(job,index){
-                if (that.props.fullContestants[i].occupation == job){
+                if (that.props.fullContestants[i].occupation === job){
                     match = true;
                 }
             })
-            if (match == false){
+            if (match === false){
                 jobs.push(that.props.fullContestants[i].occupation);
-                if (jobs.length == 4){
+                if (jobs.length === 4){
                     break;
                 }
             }
