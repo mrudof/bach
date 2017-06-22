@@ -167,7 +167,7 @@ img.Rachel {
 }
 
 .navOptions {
-    left: 90%;
+    left: 87%;
     top: 50%;
     -webkit-transform: translate(-85%, -50%);
     -moz-transform: translate(-85%, -50%);
@@ -192,12 +192,14 @@ img.Rachel {
 }
 
 .heartDiv{
+    margin-left: 40px;
     left: 100%;
     position: absolute;
     z-index: 0;
 }
 
 .resetDiv{
+    margin-left: 40px;
     color: white;
     opacity: 0.7;
     left: 100%;
