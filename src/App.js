@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import List from './List';
-import Nav from './Nav';
+import List from './list';
+import Nav from './nav';
 import selected from './random';
 import contestantData from './contestant-data';
 class App extends Component {
