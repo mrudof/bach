@@ -6,8 +6,8 @@ import LosingModal from './losing-modal';
 class Score extends Component {
   render() {
     let modal;
-    if(this.props.count === 1) {
-      if(this.props.score > 0) {
+    if(this.props.count === 16) {
+      if(this.props.score > 8) {
         modal = (<WinningModal/>)
       } else {
         modal = (<LosingModal/>)
