@@ -31,32 +31,24 @@ class Overlay extends Component {
             }
         }
         var options = jobs.sort(() => .5 - Math.random());
-        return ( <
-            Modal.Body >
-            <
-            div >
-            <
-            div className = "modelPic" >
-            <
-            img src = { this.props.picture }
-            className = { this.props.season + 'overlay' }
-            />   < /
-            div > <
-            div className = "centerText" > { this.props.name } < /div> <
-            div className = "jobOptions" > {
+        return ( <Modal.Body >
+            <div>
+            <div className = "modelPic" >
+                <img src = { this.props.picture }
+                    className = { this.props.season + 'overlay' }/>   
+            </div> 
+            <div className = "centerText" > { this.props.name } </div> 
+            <div className = "jobOptions" > {
                 options.map((option, index) => {
-                    return <div className = "button-wrapper" > <
-                        button className = "btn choices btn-primary center-block"
+                    return <div className = "button-wrapper" > <button className = "btn choices btn-primary center-block"
                     type = "button"
                     key = { index }
                     onClick = {
-                        (e) => this.bachClick(e, option)
-                    } > { option } < /button></div >
+                        (e) => this.bachClick(e, option)}> { option } </button></div >
                 })
-            } <
-            /div> < /
-            div > <
-            /Modal.Body>
+            } </div> 
+            </div> 
+            </Modal.Body>
         )
     }
 }
