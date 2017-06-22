@@ -110,7 +110,7 @@ var  contestantData = [
  {
    "season": "Ben",
    "name": "Shushanna",
-   "occupation": "Geontologist",
+   "occupation": "Mathematician",
    "picture": "http://akns-images.eonline.com/eol_images/Entire_Site/2015117/rs_634x1024-151207095731-634-shushik-bachelor.ch.120715.jpg"
  },
  {
