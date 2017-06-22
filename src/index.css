@@ -31,6 +31,37 @@ body {
     margin-right: 5px;
 }
 
+.btn.choices.center-block.cloud {
+    position: relative;
+    vertical-align: top;
+    width: 50%;
+    height: 40px;
+    padding: 0;
+    color: #454545 ;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    background: #ecf0f1 ;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #dadedf ;
+    box-shadow: inset 0 -2px #dadedf ;
+}
+
+.btn.choices.center-block.cloud.emerald {
+    color: white;
+    background: #2ecc71 ;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #28be68 ;
+    box-shadow: inset 0 -2px #28be68 ;
+}
+
+.btn.choices.center-block.cloud.pom{
+    color: white;
+    background: #c0392b ;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 -2px #b53224 ;
+    box-shadow: inset 0 -2px #b53224 ;
+}
+
 .navbar-buttons li {
     padding-right: 20px;
 }

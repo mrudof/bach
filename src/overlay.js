@@ -27,16 +27,16 @@ class Overlay extends Component {
             this.state.options.map((option, index) => {
                 let buttonColor = '';
                 if(this.state.guessed == option){
-                    buttonColor = " buttonClicked";
+                    buttonColor = "buttonClicked";
                 } 
                 if (this.props.occupation == option) {
-                    buttonColor = buttonColor + " btn-success";
+                    buttonColor =  "emerald " + buttonColor;
                 } else {
-                    buttonColor = buttonColor + " btn-danger";
+                    buttonColor = "pom " + buttonColor;
                 }
                 return <div className = "button-wrapper" key = { index }>
             <button 
-                className = {"btn choices center-block" + buttonColor}
+                className = {"btn choices center-block cloud " + buttonColor}
                 style = {{ "pointerEvents" : "none" }}
                 key = { index }
             > 
@@ -48,7 +48,7 @@ class Overlay extends Component {
             buttonGroups=(
                 this.state.options.map((option, index) => {
                     return <div key = { index } className = "button-wrapper" >
-                <button className = "btn choices btn-primary center-block"
+                <button className = "btn choices center-block cloud"
                     type = "button"
                     onClick = {
                         (e) => this.bachClick(e, option)}> { option } </button></div>
