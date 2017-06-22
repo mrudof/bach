@@ -3,6 +3,7 @@ import List from './List';
 import Nav from './Nav';
 import selected from './random';
 import contestantData from './contestant-data';
+
 class App extends Component {
     constructor(props) {
         super(props)
