@@ -84,25 +84,26 @@ img.Rachel {
     margin: 0 0 0 -145px;
 }
 
-.modalPic{
-    display:block;
-    margin:auto;
+.modelPic{
+    display: block;
+    overflow:hidden;
+    text-align:center;
 }
 .Benoverlay{
-    width:20%;
-    height:20%;
+    max-width:50%;
+    margin: 0 0 -200px 0;
 }
 .Jojooverlay{
-    width:20%;
-    height:20%;
+    width:50%;
+    height:50%;
 }
 .Nickoverlay{
-    width:20%;
-    height:20%;
+    width:50%;
+    height:50%;
 }
 .Racheloverlay{
-    width:20%;
-    height:20%;
+    width:50%;
+    height:50%;
 }
 
 .centerText {

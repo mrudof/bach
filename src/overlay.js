@@ -40,7 +40,7 @@ class Overlay extends Component{
                     </div> 
                     <div className = "centerText" > { this.props.name } </div>
                     <div className="jobOptions">
-                        {options.map((option, index) => {return <button className="btn btn-primary" key={index} onClick={(e) => this.bachClick(e, option)}>{option}</button>})}
+                        {options.map((option, index) => {return <button className="btn btn-primary choices" key={index} onClick={(e) => this.bachClick(e, option)}>{option}</button>})}
                     </div>
                 </div>
             </Modal.Body>
