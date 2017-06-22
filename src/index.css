@@ -252,3 +252,6 @@ img.Rachel {
 .buttonClicked {
   border: 5px solid black;
 }
+.gameOverGif{
+  height: 500px;
+}
