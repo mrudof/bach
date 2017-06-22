@@ -17,10 +17,9 @@ class Nav extends Component {
                 </a>
                 <div className="navOptions">
                   <ul className="nav navbar-nav navbar-right navbar-buttons">
-                  <li><Score/></li>
-                  <li><button onClick={this.handleClick} type="play" className="btn btn-danger resetButton"><span className="glyphicon glyphicon-repeat" aria-hidden="true"></span>
-</button></li>
-                </ul>
+                    <li><button onClick={this.handleClick} type="play" className="btn btn-danger resetButton"><span className="glyphicon glyphicon-repeat" aria-hidden="true"></span></button></li>
+                    <li><Score score={this.props.score}/></li>
+                  </ul>
                 </div>
               </div>
           </div>

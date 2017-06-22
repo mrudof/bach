@@ -1,15 +1,10 @@
 import React, { Component } from 'react';
 
 class Score extends Component {
-  constructor(props) {
-    super(props)
-    this.state = { score: props.score || 0 };
-  }
-
   render() {
     return (
       <div className="score">
-        Score: {this.state.score} / 16
+        Score: {this.props.score} / 16
       </div>
     );
   }
