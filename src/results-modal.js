@@ -32,7 +32,7 @@ class ResultsModal extends Component {
                 </Modal.Title>
         </Modal.Header>
         <Modal.Body> 
-            <span className="gameOverTitle">{"Final Score: " + this.props.score}</span>
+            <span className="centerText">{"Final Score: " + this.props.score}</span>
             <div className = "gameOverGif">
                 <img src = {giphy}/> 
             </div> 
