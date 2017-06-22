@@ -584,7 +584,7 @@ var  contestantData = [
  {
    "season": "Rachel",
    "name": "Lee",
-   "occupation": "Singer/Songwriter",
+   "occupation": "Singer-Songwriter",
    "picture": "http://datg-cms-source-repo.s3-website-us-east-1.amazonaws.com/ABC/TheBachelorette/BACT_2017_cast_lee/4c623c45-b2c7-4cec-aa06-b76e09aa8205.jpg"
  },
  {
