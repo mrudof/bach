@@ -239,3 +239,7 @@ img.Rachel {
 .wrong{
     color: red;
 }
+
+.buttonClicked {
+  border: 5px solid black;
+}

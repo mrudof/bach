@@ -33,14 +33,29 @@ class ProductItem extends Component {
     }
 
     render() {
+        var jobs = [this.props.occupation];
+        var that = this;
+        for (var i = 0; i < this.props.fullContestants.length; i++) {
+            var match = false;
+            jobs.map(function(job, index) {
+                if (that.props.fullContestants[i].occupation === job) {
+                    match = true;
+                }
+            })
+            if (match === false) {
+                jobs.push(that.props.fullContestants[i].occupation);
+                if (jobs.length === 4) {
+                    break;
+                }
+            }
+        }
+        var options = jobs.sort(() => .5 - Math.random());
         let divOverlay;
 
         if(this.state.card === "correct"){
-            console.log('hi');
             divOverlay = <div><span className="glyphicon glyphicon-ok clickedOverlay check" aria-hidden="true"></span></div>;
         }
         if(this.state.card === "incorrect"){
-            console.log('hi');
             divOverlay = <div><span className="glyphicon glyphicon-remove clickedOverlay wrong" aria-hidden="true"></span></div>;
         }
         return ( 
@@ -55,12 +70,11 @@ class ProductItem extends Component {
             </Modal.Header>
             <Overlay 
               showModal={this.state.showModal} 
-              fullContestants={this.props.fullContestants} 
+              options={options}
               season={this.props.season}
               occupation={this.props.occupation}
               name={this.props.name}
               picture={this.props.picture}
-              closeModal={this.close}
               correct={this.updateCardCorrect}
               incorrect={this.updateCardinCorrect}
             />
