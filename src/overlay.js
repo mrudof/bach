@@ -1,50 +1,64 @@
-import React, {Component} from 'react';
-import {Modal} from 'react-bootstrap';
+import React, { Component } from 'react';
+import { Modal } from 'react-bootstrap';
 import ContestantInfo from './contestant-info';
 
-class Overlay extends Component{
+class Overlay extends Component {
 
-    bachClick(e, answer){
+    bachClick(e, answer) {
         e.preventDefault();
         this.props.closeModal();
-        if (answer === this.props.occupation){
+        if (answer === this.props.occupation) {
             this.props.correct();
         } else {
             this.props.incorrect();
         }
     }
-    render(){
-        var shuffled = this.props.fullContestants.sort(() => .5 - Math.random());// shuffle
+    render() {
+        var shuffled = this.props.fullContestants.sort(() => .5 - Math.random()); // shuffle
         var jobs = [this.props.occupation];
         var that = this;
-        for (var i=0; i<this.props.fullContestants.length; i++){
+        for (var i = 0; i < this.props.fullContestants.length; i++) {
             var match = false;
-            jobs.map(function(job,index){
-                if (that.props.fullContestants[i].occupation == job){
+            jobs.map(function(job, index) {
+                if (that.props.fullContestants[i].occupation == job) {
                     match = true;
                 }
             })
-            if (match == false){
+            if (match == false) {
                 jobs.push(that.props.fullContestants[i].occupation);
-                if (jobs.length == 4){
+                if (jobs.length == 4) {
                     break;
                 }
             }
-        }  
+        }
         var options = jobs.sort(() => .5 - Math.random());
-        return (
-            <Modal.Body>
-                <div>
-                    <div className="modelPic">
-                        <img src = { this.props.picture } className={this.props.season + 'overlay'}/>  
-                    </div> 
-                    <div className = "centerText" > { this.props.name } </div>
-                    <div className="jobOptions">
-                        {options.map((option, index) => {return <button className="btn btn-primary choices" key={index} onClick={(e) => this.bachClick(e, option)}>{option}</button>})}
-                    </div>
-                </div>
-            </Modal.Body>
-            )
+        return ( <
+            Modal.Body >
+            <
+            div >
+            <
+            div className = "modelPic" >
+            <
+            img src = { this.props.picture }
+            className = { this.props.season + 'overlay' }
+            />   < /
+            div > <
+            div className = "centerText" > { this.props.name } < /div> <
+            div className = "jobOptions" > {
+                options.map((option, index) => {
+                    return <div className = "button-wrapper" > <
+                        button className = "btn choices btn-primary center-block"
+                    type = "button"
+                    key = { index }
+                    onClick = {
+                        (e) => this.bachClick(e, option)
+                    } > { option } < /button></div >
+                })
+            } <
+            /div> < /
+            div > <
+            /Modal.Body>
+        )
     }
 }
 export default Overlay;
