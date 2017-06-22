@@ -17,11 +17,12 @@ class App extends Component {
             Nav / >
             <
             List contestants = { selected }
+            fullContestants = { shuffled }
             /> <
             div className = "footer navbar-bottom" >
             <
-            p className = "disclaimer" > All Bachelor photos are property of their respective owners; No Copyright infringement intended. < /p> < /
-            div > <
+            p className = "disclaimer" > All Bachelor photos are property of their respective owners; No Copyright infringement intended. < /p> <
+            /div> <
             /div>
         );
     }

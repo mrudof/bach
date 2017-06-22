@@ -5,7 +5,7 @@ class ContestantInfo extends Component {
         return (
           <div>
             <div className = "pictures" key = "picture">
-              <img src = { this.props.picture } className = { this.props.season }/>  
+              <img src = { this.props.picture } className = { this.props.season } />  
             </div> 
             <div className = "centerText" key = "name" > { this.props.name } </div>
           </div>
