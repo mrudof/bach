@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Modal } from 'react-bootstrap';
-
-class LosingModal extends Component {
+class ResultsModal extends Component {
       constructor(props){
         super(props);
         this.state = {
@@ -14,14 +13,15 @@ class LosingModal extends Component {
         this.setState({ showModal: false });
     }
   render(){
+    var result = this.props.score > 8 ? "You Won!" : "You Lost!";
     return(
       <Modal onHide={this.close} show={this.state.showModal}>
         <Modal.Header closeButton>
-                <Modal.Title>You Lost!</Modal.Title>
-            </Modal.Header>
+                <Modal.Title>{result} + {this.props.score}</Modal.Title>
+        </Modal.Header>
       </Modal>
     );
   }
 }
 
-export default LosingModal;
+export default ResultsModal;

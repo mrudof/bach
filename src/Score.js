@@ -1,17 +1,11 @@
 import React, { Component } from 'react';
-import WinningModal from './winning-modal';
-import LosingModal from './losing-modal';
-
+import ResultsModal from './results-modal';
 
 class Score extends Component {
   render() {
     let modal;
     if(this.props.count === 16) {
-      if(this.props.score > 8) {
-        modal = (<WinningModal/>)
-      } else {
-        modal = (<LosingModal/>)
-      }
+      modal = <ResultsModal score={this.props.score}/>
     }
     return (
     <div>
