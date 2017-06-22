@@ -7,15 +7,11 @@ class Score extends Component {
     if(this.props.count === 16) {
       modal = <ResultsModal score={this.props.score}/>
     }
-    return (
-    <div>
-      <div className="score">
-        Score: {this.props.score} / 16
-      </div>
-      {modal}
-    </div>
-    );
+        return ( <div >
+            <div className = "score" >
+              Score: { this.props.score } / 16 
+              </div> { modal } </div>
+        );
   }
 }
-
 export default Score;
