@@ -14,13 +14,13 @@ class ResultsModal extends Component {
     }
   render(){
     let result, giphy;
-    if (this.props.score > 8){
-        result = "You Won!";
-        giphy = 'https://media.giphy.com/media/3o6ZsYfXaDrmmASwQo/giphy.gif';
-    }
-    else if (this.props.score === 16){
+    if (this.props.score === 16){
         result = "Perfect Score!";
         giphy = "https://media.giphy.com/media/xUPGczNuAxZmXlzXhu/giphy.gif"
+    }
+    else if (this.props.score > 8){
+        result = "You Won!";
+        giphy = 'https://media.giphy.com/media/3o6ZsYfXaDrmmASwQo/giphy.gif';
     }
     else{
         result = "You Lost!";
