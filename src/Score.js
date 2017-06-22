@@ -4,7 +4,7 @@ import ResultsModal from './results-modal';
 class Score extends Component {
   render() {
     let modal;
-    if(this.props.count === 16) {
+    if(this.props.count === 1) {
       modal = <ResultsModal score={this.props.score}/>
     }
         return ( <div >
