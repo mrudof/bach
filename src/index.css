@@ -49,6 +49,16 @@ body {
     margin-top: 12px;
 }
 
+.gameOverGif {
+    display: block;
+    text-align: center;
+}
+
+.gameOverTitle {
+    text-align: center;
+    font-family: cursive;
+}
+
 .pictures {
     width: 200px;
     height: 200px;
