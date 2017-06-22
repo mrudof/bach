@@ -11,6 +11,7 @@ class App extends Component {
     selected.forEach(function(item){ 
       item.clicked = 0;
     });
+
     return (
       <div className="App">
         <Nav/>
@@ -18,7 +19,9 @@ class App extends Component {
         <div className="footer navbar-bottom">
 		     <p className="disclaimer">All Bachelor photos are property of their respective owners; No Copyright infringement intended.</p>
 	      </div>
+        
       </div>
+
     );
   }
 }
