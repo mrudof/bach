@@ -28,10 +28,16 @@ class List extends Component {
                 updateScore = {
                     that.props.updateScore
                 }
+                updateCounter = {
+                    that.props.updateScore
+                }
                 />
             )
         })
-        return ( <StackGrid className = "grid" columnWidth = {210}>{ contestantslist } </StackGrid>
+        return ( 
+        <div>
+            <StackGrid className = "grid" columnWidth = {210}>{ contestantslist } </StackGrid>
+        </div>
         )
     }
 }

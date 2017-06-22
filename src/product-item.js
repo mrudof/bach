@@ -24,11 +24,12 @@ class ProductItem extends Component {
         this.setState({ showModal: false });
     }
     updateCardCorrect() {
-      this.props.updateScore()
       this.setState({card: "correct"})
+      this.props.updateScore("correct")
     }
     updateCardIncorrect() {
       this.setState({card: "incorrect"})
+      this.props.updateScore("incorrect")
     }
 
     render() {
