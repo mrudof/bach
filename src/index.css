@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     padding-top: 140px;
     height: 100%;
+    background-image: url("https://www.warnerbros.com/sites/default/files/bachelor_background1.jpg");
 }
 
 .footer {
@@ -50,7 +51,7 @@ body {
     margin-top: 12px;
     color: white;
     opacity: 0.7;
-    font-family:Slackey;
+    font-family: Slackey;
 }
 
 .gameOverGif {
@@ -105,7 +106,7 @@ img.Rachel {
     margin: auto;
     width: 300px;
     height: 300px;
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 .Benoverlay {
@@ -181,27 +182,33 @@ img.Rachel {
 }
 
 .heart {
-  fill: red;
-  position: relative;
-  top: 5px;
-  width: 50px;
-  animation: pulse 1s ease infinite;
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 50px;
+    animation: pulse 1s ease infinite;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.3); }
-  100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-.heartDiv{
+.heartDiv {
     margin-left: 20px;
     left: 100%;
     position: absolute;
     z-index: 0;
 }
 
-.resetDiv{
+.resetDiv {
     margin-left: 20px;
     color: white;
     opacity: 0.7;
@@ -233,10 +240,12 @@ img.Rachel {
     margin-top: 65px;
     opacity: 0.5;
 }
-.check{
+
+.check {
     color: green;
 }
-.wrong{
+
+.wrong {
     color: red;
 }
 
