@@ -4,6 +4,7 @@ body {
     font-family: sans-serif;
     padding-top: 140px;
     height: 100%;
+    background-image: url("https://www.warnerbros.com/sites/default/files/bachelor_background1.jpg");
 }
 
 .footer {
@@ -16,6 +17,7 @@ body {
 }
 
 .bachelor-logo {
+    width: 25%;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
@@ -49,8 +51,12 @@ body {
     margin-top: 12px;
     color: white;
     opacity: 0.7;
+<<<<<<< HEAD
     font-family:Candal;
     font-weight: bolder;
+=======
+    font-family: Slackey;
+>>>>>>> 85a784c2a825c3bdf72700fa45a9bf815e869fbd
 }
 
 .gameOverGif {
@@ -105,7 +111,7 @@ img.Rachel {
     margin: auto;
     width: 300px;
     height: 300px;
-    border-radius:25px;
+    border-radius: 25px;
 }
 
 .Benoverlay {
@@ -184,6 +190,7 @@ img.Rachel {
 }
 
 .navOptions {
+    width: 25%;
     left: 87%;
     top: 50%;
     -webkit-transform: translate(-85%, -50%);
@@ -195,28 +202,34 @@ img.Rachel {
 }
 
 .heart {
-  fill: red;
-  position: relative;
-  top: 5px;
-  width: 50px;
-  animation: pulse 1s ease infinite;
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 50px;
+    animation: pulse 1s ease infinite;
 }
 
 @keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.3); }
-  100% { transform: scale(1); }
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.3);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
-.heartDiv{
-    margin-left: 40px;
+.heartDiv {
+    margin-left: 20px;
     left: 100%;
     position: absolute;
     z-index: 0;
 }
 
-.resetDiv{
-    margin-left: 40px;
+.resetDiv {
+    margin-left: 20px;
     color: white;
     opacity: 0.7;
     left: 100%;
@@ -247,9 +260,18 @@ img.Rachel {
     margin-top: 65px;
     opacity: 0.5;
 }
-.check{
+
+.check {
     color: green;
 }
-.wrong{
+
+.wrong {
     color: red;
+}
+
+.buttonClicked {
+  border: 5px solid black;
+}
+.gameOverGif{
+  height: 500px;
 }
