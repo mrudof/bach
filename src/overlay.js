@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Modal } from 'react-bootstrap';
-import ContestantInfo from './contestant-info';
 
 class Overlay extends Component {
         constructor(props){
@@ -22,14 +21,14 @@ class Overlay extends Component {
     }
     render() {
         let buttonGroups;
-        if(this.state.guessed != ""){
+        if(this.state.guessed !== ""){
             buttonGroups = (
             this.state.options.map((option, index) => {
                 let buttonColor = '';
-                if(this.state.guessed == option){
+                if(this.state.guessed === option){
                     buttonColor = "buttonClicked";
                 } 
-                if (this.props.occupation == option) {
+                if (this.props.occupation === option) {
                     buttonColor =  "emerald " + buttonColor;
                 } else {
                     buttonColor = "pom " + buttonColor;
@@ -57,7 +56,7 @@ class Overlay extends Component {
         return ( <Modal.Body >
             <div>
             <div className = "modelPic" >
-                <img src = { this.props.picture }
+                <img alt="modal" src = { this.props.picture }
                     className = { this.props.season + 'overlay' }/>   
             </div> 
             <div className = "centerText" > { this.props.name } </div> 
